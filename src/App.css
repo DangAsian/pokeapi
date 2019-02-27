@@ -1,0 +1,30 @@
+.App {
+  /* text-align: center; */
+  box-sizing: border-box;
+}
+
+.find {
+  color: red;
+  height: 2000px;
+  width: 200px;
+}
+
+.pokemon-content {
+  display: inline-block;
+  width: 33.33%;
+  padding: 20px 0;
+  height: 100px;
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 0;
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

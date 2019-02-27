@@ -1,0 +1,48 @@
+header {
+  max-width: 100%;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  height: 180px;
+}
+
+.container-logo {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.container-logo h1 {
+  display: block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  width: 10%;
+  transition: .25s;
+}
+
+.container-logo h1:hover {
+  width: 20%;
+}
+
+.container-nav {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container-nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 20px;
+}
