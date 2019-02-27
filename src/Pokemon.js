@@ -5,7 +5,7 @@ class Pokemon extends React.Component {
   render(){
     const { name } = this.props
     return(
-      <Link to={`/details/${name}`}>
+      <Link to={`/pokemon/details/${name}`}>
         <div className="pokemon-content">
           <h2>{name}</h2>
         </div>

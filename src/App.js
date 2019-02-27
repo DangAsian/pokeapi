@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
 import Results from "./Results";
+import Details from "./Details";
 import Header from "./Header";
 import "./App.css";
 
@@ -10,13 +11,14 @@ class App extends Component {
 
     this.state = {
       pokemon: [],
-      navbar: ["Home", "Contact", "About"],
+      name: "",
+      abilities: [],
       loading: true
     };
   }
 
-  componentDidMount = () => {
-    const pokeApi = `https://pokeapi.co/api/v2/pokemon`;
+  componentDidMount = (poke) => {
+    const pokeApi = `https://pokeapi.co/api/v2/pokemon/`;
 
     fetch(pokeApi)
       .then(response => {
@@ -46,7 +48,8 @@ class App extends Component {
       <div className="App">
         <Header navbar={this.state.navbar} />
         <Router>
-          <Results path="/pokemon/Home" pokemon={pokemon} />
+          <Results path="/pokemon/home" pokemon={pokemon} />
+          <Details path="/pokemon/details/:id" />
         </Router>
       </div>
     );

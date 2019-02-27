@@ -1,4 +1,5 @@
 import React from "react";
+import Home from "./Home";
 import "./Header.css";
 import { Link } from "@reach/router";
 
@@ -12,11 +13,9 @@ class Header extends React.Component {
           </div>
           <div className="container-nav">
             <ul>
-              {this.props.navbar.map(item => (
-                <li>
-                  <Link to={`/pokemon/${item}`}>{item}</Link>
-                </li>
-              ))}
+                <li><Link to={`/pokemon/home`}><Home/>Home</Link></li>
+                <li><Link to={`/pokemon/about`}><Home/>About</Link></li>
+                <li><Link to={`/pokemon/contact`}><Home/>Contact</Link></li>
             </ul>
           </div>
         </div>
